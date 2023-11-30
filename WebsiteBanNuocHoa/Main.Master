@@ -1,0 +1,207 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="WebsiteBanNuocHoa.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Good Charme</title>
+    <link rel="icon" href="~/Images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="~/fonts/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="~/Styles/grid.css">
+    <link rel="stylesheet" href="~/Styles/base.css">
+    <link rel="stylesheet" href="~/Styles/main.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="wrapper">
+            <div class="top-bar_wrapper">
+                <div class="grid wide">
+                    <div class="top-bar">
+                        <p class="top-bar_message">Tôn vinh phong cách</p>
+                        <ul class="top-bar_list">
+                            <li class="top-bar_item">
+                                <a href="https://www.facebook.com/GoodCharmePerfume" target="_blank" class="top-bar_link">
+                                    <i class="top-bar_icon fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="top-bar_item">
+                                <a href="https://www.instagram.com/goodcharmevietnam/" target="_blank" class="top-bar_link">
+                                    <i class="top-bar_icon fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="top-bar_item">
+                                <a href="tel:1900 636 638" class="top-bar_link">
+                                    <i class="top-bar_icon fa-solid fa-phone"></i>
+                                    1900 636 638
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <header class="header">
+                <div class="main-header-wrapper">
+                    <div class="grid wide">
+                        <div class="main-header">
+                            <asp:HyperLink ID="HyperLink1" class="main-header_logo-link" runat="server" NavigateUrl="~/TrangChu.aspx">
+                                <asp:Image ID="imgLoGo" runat="server" class="main-header_logo-img"
+                                    ImageUrl="~/Images/logo.png" />
+                            </asp:HyperLink>
+                            <div class="main-header_search">
+                                <asp:TextBox ID="txtTimKiem" runat="server" class="main-header_search-input" placeholder="Bạn muốn mua gì?"></asp:TextBox>
+                                <asp:LinkButton ID="btnTimKiem" runat="server" CssClass="main-header_search-btn">
+                                    <i class="main-header_search-icon fa-solid fa-magnifying-glass"></i>
+                                </asp:LinkButton>
+                            </div>
+                            <div class="main-header_control">
+                                <asp:HyperLink ID="HyperLink2" class="main-header_cart" runat="server" NavigateUrl="~/GioHang.aspx">
+                                    <i class="main-header_cart-icon fa-solid fa-cart-shopping"></i>
+                                    <asp:Label ID="lblSoLuong" runat="server" Text="0" class="main-header_cart-quality">
+                                    </asp:Label>
+                                </asp:HyperLink>
+                                <div class="user-menu">
+                                    <asp:HyperLink ID="HyperLink3" class="main-header_user" runat="server">
+                                        <i class="main-header_user-icon fa-solid fa-user"></i>
+                                    </asp:HyperLink>
+                                    <ul class="user-list">
+                                        <li class="user-item">
+                                            <asp:HyperLink ID="HyperLink14" class="user-item-link" runat="server" NavigateUrl="~/Admin/ChiTietSanPham.aspx">Chi tiết sản phẩm</asp:HyperLink>
+                                        </li>
+                                        <li class="user-item">
+                                            <asp:HyperLink ID="HyperLink15" class="user-item-link" runat="server" NavigateUrl="~/Admin/ThemSanPham.aspx">Thêm sản phẩm</asp:HyperLink>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <nav class="navbar">
+                            <ul class="navbar-list">
+                                <li class="navbar-item">
+                                    <asp:HyperLink ID="HyperLink4" class="navbar-item_link" runat="server" NavigateUrl="~/TrangChu.aspx">Trang chủ</asp:HyperLink>
+                                </li>
+                                <li class="navbar-item">
+                                    <asp:HyperLink ID="HyperLink5" class="navbar-item_link" runat="server" NavigateUrl="DSSanPham.aspx?MaLoaiSP=1">Nước hoa nam</asp:HyperLink>
+                                </li>
+                                <li class="navbar-item">
+                                    <asp:HyperLink ID="HyperLink6" class="navbar-item_link" runat="server" NavigateUrl="DSSanPham.aspx?MaLoaiSP=2">Nước hoa nữ</asp:HyperLink>
+                                </li>
+                                <li class="navbar-item">
+                                    <asp:HyperLink ID="HyperLink7" class="navbar-item_link" runat="server" NavigateUrl="DSSanPham.aspx?MaLoaiSP=3">Nước hoa trẻ em</asp:HyperLink>
+                                </li>
+                                <li class="navbar-item">
+                                    <asp:HyperLink ID="HyperLink8" class="navbar-item_link" runat="server" NavigateUrl="DSSanPham.aspx?MaLoaiSP=4">Nước hoa xe hơi</asp:HyperLink>
+                                </li>
+                                <li class="navbar-item">
+                                    <asp:HyperLink ID="HyperLink12" class="navbar-item_link" runat="server" NavigateUrl="DSSanPham.aspx?MaNhomSP=2">Sản phẩm khác</asp:HyperLink>
+                                    <i class="navbar-item_icon fa-solid fa-angle-down"></i>
+                                    <ul class="navbar-item_list">
+                                        <li class="navbar-item_item">
+                                            <asp:HyperLink ID="HyperLink9" class="navbar-item_item-link" runat="server" NavigateUrl="DSSanPham.aspx?MaLoaiSP=5">Mỹ phẩm</asp:HyperLink>
+                                        </li>
+                                        <li class="navbar-item_item">
+                                            <asp:HyperLink ID="HyperLink10" class="navbar-item_item-link" runat="server" NavigateUrl="DSSanPham.aspx?MaLoaiSP=6">Chăm sóc toàn thân</asp:HyperLink>
+                                        </li>
+                                        <li class="navbar-item_item">
+                                            <asp:HyperLink ID="HyperLink11" class="navbar-item_item-link" runat="server" NavigateUrl="DSSanPham.aspx?MaLoaiSP=7">Tinh dầu thiên nhiên</asp:HyperLink>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navbar-item">
+                                    <asp:HyperLink ID="HyperLink13" class="navbar-item_link" runat="server" NavigateUrl="~/Login.aspx">Đăng nhập</asp:HyperLink>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            
+            <asp:Panel ID="pnlFooter" runat="server">
+                <footer class="footer">
+                    <div class="grid wide">
+                        <h2 class="footer_heading">Good Charme</h2>
+                        <div class="row">
+                            <div class="col l-4 m-6 c-12">
+                                <h3 class="footer_title">Công ty TNHH Good Charme</h3>
+                                <p class="footer_text">
+                                    Địa chỉ: 311 Hoàng Văn Thụ, P.2, Q. Tân Bình, Tp.HCM
+                                </p>
+                                <p class="footer_text">
+                                    MSDN: 0317116797 Ngày cấp 11/01/2022 tại Phòng đăng ký kinh doanh của Sở kế hoạch đầu tư TP. Hồ Chí Minh
+                                </p>
+                                <p class="footer_text">
+                                    Điện thoại: 1900 636 638    
+                                </p>
+                                <p class="footer_text">
+                                    Email: bosscharme@gmail.com
+                                </p>
+                            </div>
+                            <div class="col l-2 m-6 c-6">
+                                <h3 class="footer_title">Chính sách</h3>
+                                <ul class="footer_list">
+                                    <li class="footer_item">
+                                        <a href="" class="footer-link">Chính sách vận chuyển</a>
+                                    </li>
+                                    <li class="footer_item">
+                                        <a href="" class="footer-link">Chính sách bảo mật</a>
+                                    </li>
+                                    <li class="footer_item">
+                                        <a href="" class="footer-link">Chính sách đổi trả</a>
+                                    </li>
+                                    <li class="footer_item">
+                                        <a href="" class="footer-link">Chính sách kiểm hàng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col l-3 m-6 c-6">
+                                <h3 class="footer_title">Đơn vị vận chuyển</h3>
+                                <div class="footer_logistics">
+                                    <asp:Image ID="Image1" runat="server" class="footer_logistic-img" ImageUrl="~/Images/ghn.jpg" />
+                                    <asp:Image ID="Image2" runat="server" class="footer_logistic-img" ImageUrl="~/Images/ghtk.png" />
+                                    <asp:Image ID="Image3" runat="server" class="footer_logistic-img" ImageUrl="~/Images/j&t.png" />
+                                    <asp:Image ID="Image4" runat="server" class="footer_logistic-img" ImageUrl="~/Images/ninjavan.png" />
+                                    <asp:Image ID="Image5" runat="server" class="footer_logistic-img" ImageUrl="~/Images/vietnam-post.png" />
+                                    <asp:Image ID="Image6" runat="server" class="footer_logistic-img" ImageUrl="~/Images/viettel-post.png" />
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <div>
+                                    <h3 class="footer_title">Theo dõi chúng tôi trên</h3>
+                                    <ul class="footer_list">
+                                        <li class="footer_item">
+                                            <a href="https://www.facebook.com/GoodCharmePerfume" target="_blank" class="footer_item-link">
+                                                <i class="footer_item-icon fa-brands fa-facebook"></i>
+                                                Facebook
+                                            </a>
+                                        </li>
+                                        <li class="footer_item"></li>
+                                        <a href="https://www.instagram.com/goodcharmevietnam/" target="_blank" class="footer_item-link">
+                                                <i class="footer_item-icon fa-brands fa-square-instagram"></i>
+                                                Instagram
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="footer_title">Được chứng nhận</h3>
+                                    <a href="http://online.gov.vn/Home/WebDetails/99714" target="_blank" class="footer_certify-link">
+                                        <asp:Image ID="Image7" runat="server" class="footer_certify-img" ImageUrl="~/Images/bo-cong-thuong.png" />
+                                    </a>
+                                &nbsp;&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </asp:Panel>
+        </div>
+    </form>
+</body>
+</html>

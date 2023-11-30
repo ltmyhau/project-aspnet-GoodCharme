@@ -1,0 +1,55 @@
+﻿.product {
+    margin: 48px 0 60px;
+}
+
+.product-heading {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.product-info {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.product-text {
+    min-width: 200px;
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+.product-input {
+    flex: 1;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    padding: 8px;
+    line-height: 1.6;
+}
+
+.product-dropdownlist {
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    padding: 8px 16px;
+    line-height: 1.6;
+}
+
+.control {
+    text-align: right;
+}
+
+.control-btn {
+    width: 150px;
+    height: 36px;
+    margin: 16px;
+}

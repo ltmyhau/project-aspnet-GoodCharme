@@ -1,0 +1,102 @@
+﻿.cart {
+    width: 80%;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    text-align: center;
+    display: flex;
+    margin: 48px auto 0px;
+}
+
+table tr td:nth-child(1) {
+    width: 100px;
+}
+
+table tr td:nth-child(2) {
+    text-align: left;
+    padding: 0 8px;
+}
+
+.quantity-input {
+    flex: 1;
+    min-width: 40px;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: #fff;
+}
+
+.payment {
+    width: 80%;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    display: flex;
+    justify-content: right;
+    margin: 0 auto;
+}
+
+.payment-text {
+    color: var(--text-color);
+    margin: 0 4px;
+}
+
+.payment-total {
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.order {
+    margin: 48px 0 60px;
+    display: flex;
+}
+
+.order-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin: 0 32px;
+}
+
+.order-info > div,
+.order-info > input {
+    width: 100%;
+}
+
+.order-title {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 8px 0;
+    font-weight: 700;
+}
+
+.order-input {
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    border-radius: 30px;
+    outline: none;
+    padding: 8px 16px;
+    color: var(--text-color);
+    margin: 8px 0;
+}
+
+.payment-list {
+    list-style: none;
+}
+
+.order-radio {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    line-height: 1.6;
+    margin: 8px 0;
+}
+
+.order-radio > input {
+    margin-right: 8px;
+}
+

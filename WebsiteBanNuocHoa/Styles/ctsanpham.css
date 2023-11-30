@@ -1,0 +1,42 @@
+﻿.product-heading {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin: 48px 0 24px;
+}
+
+.product-filter {
+    display: flex;
+    align-items: center;
+}
+
+.product-title {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-right: 8px;
+}
+
+.product-dropdownlist {
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+.product-list {
+    width: 100%;
+    font-size: 1.8rem;
+    margin: 16px 0;
+}
+
+.product-control > a {
+    color: #aaa;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0 4px;
+}
+
+.product-img {
+    display: block;
+    text-align: center;
+}

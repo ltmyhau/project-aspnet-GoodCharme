@@ -1,0 +1,127 @@
+﻿.content {
+    margin: 48px;
+}
+
+/* Category */
+.category-menu {
+    padding-bottom: 16px;
+}
+
+.category_heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.category-list {
+    list-style: none;
+    font-size: 1.6rem;
+    margin: 16px;
+}
+
+.category-item {
+    margin: 12px 0;
+}
+
+.category-item_link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.category-item_list {
+    list-style: none;
+    font-size: 1.6rem;
+    margin-left: 16px;
+}
+
+.category-item_item {
+    margin: 8px 0;
+}
+
+.category-item_item-link {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+    .category-item_link:hover,
+    .category-item_item-link:hover {
+        color: var(--primary-color);
+    }
+
+.category-price {
+    margin: 16px;
+}
+
+.category-price_inputs {
+    display: flex;
+    align-items: center;
+}
+
+.category-price_input {
+    width: 70px;
+    height: 30px;
+    padding: 0 8px;
+    border: 1px solid var(--primary-color);
+    outline: none;
+}
+
+.category-price_label {
+    font-size: 1.4rem;
+    color: #333;
+    margin: 0 8px;
+}
+
+.category-price_btn {
+    width: 60%;
+    height: 30px;
+    font-size: 1.4rem;
+    margin: 8px 6px;
+}
+
+/* Product */
+.product_item {
+    width: calc(100% - 16px);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 16px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.product_item:hover {
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
+    transform: translateY(-3px);
+}
+
+.product_item:hover .product_item-img {
+    transform: scale(1.1);
+}
+
+.product_item-img {
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.product_item-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1.4;
+    height: 50px;
+    padding: 0 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.product_item-price {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    line-height: 1.4;
+    padding: 16px 0;
+    display: block;
+}

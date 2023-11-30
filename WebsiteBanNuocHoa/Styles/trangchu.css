@@ -1,0 +1,121 @@
+﻿/* Banner */
+.banner {
+    overflow: hidden;
+    position: relative;
+}
+
+.banner_list {
+    width: 100%;
+    display: flex;
+    transition: 0.5s;
+}
+
+.banner_item {
+    width: 100%;
+}
+
+.control-btn {
+    font-size: 3rem;
+    color: #999;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.control-btn:hover {
+    color: #fff;
+}
+
+.banner_btn-left {
+    left: 8px;
+}
+
+.banner_btn-right {
+    right: 8px;
+}
+
+.banner_index {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.banner_index-item {
+    border: 2px solid #999;
+    padding: 4px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.banner_index-active {
+    background-color: #999;
+}
+
+/* Product */
+.product_heading {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--text-color);
+    padding: 80px 0;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.product_heading::after {
+    position: absolute;
+    content: "";
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    border: 3px solid var(--primary-color);
+}
+
+.product_item {
+    width: calc(100% - 16px);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 16px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.product_item:hover {
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
+    transform: translateY(-3px);
+}
+
+.product_item:hover .product_item-img {
+    transform: scale(1.1);
+}
+
+.product_item-img {
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.product_item-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1.4;
+    height: 50px;
+    padding: 0 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.product_item-price {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    line-height: 1.4;
+    padding: 16px 0;
+    display: block;
+}
